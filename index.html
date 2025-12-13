@@ -72,41 +72,44 @@
         Skip to content
     </a>
 
-    <!-- Contact Modal (Hidden by default) -->
-    <div id="contactModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
-        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="toggleModal('contactModal')"></div>
-        <div class="relative bg-white w-full max-w-lg rounded-2xl p-6 shadow-2xl animate-[fadeIn_0.3s_ease-out]">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-2xl font-bold text-slate-900">Get in Touch</h3>
-                <button onclick="toggleModal('contactModal')" class="p-2 hover:bg-slate-100 rounded-full transition-colors" aria-label="Close modal">
-                    <i data-lucide="x" class="w-6 h-6"></i>
-                </button>
-            </div>
-            <div class="space-y-6">
-                <p class="text-slate-600">I'm currently available for freelance work and internships. Let's connect!</p>
-                <div class="grid gap-4">
-                    <a href="mailto:kotasirichandana7@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-yellow transition-colors group">
-                        <div class="p-3 bg-white rounded-full shadow-sm group-hover:bg-brand-yellow transition-colors">
-                            <i data-lucide="mail" class="w-5 h-5 text-slate-800"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase">Email Me</p>
-                            <p class="font-medium text-slate-900">kotasirichandana7@gmail.com</p>
-                        </div>
-                    </a>
-                    <a href="tel:6300487424" class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-yellow transition-colors group">
-                        <div class="p-3 bg-white rounded-full shadow-sm group-hover:bg-brand-yellow transition-colors">
-                            <i data-lucide="phone" class="w-5 h-5 text-slate-800"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase">Phone</p>
-                            <p class="font-medium text-slate-900">6300487424</p>
-                        </div>
-                    </a>
-                </div>
+   <!-- Contact Modal (Hidden by default) -->
+<div id="contactModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+    <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="toggleModal('contactModal')"></div>
+    <div class="relative bg-white w-full max-w-lg rounded-2xl p-6 shadow-2xl animate-[fadeIn_0.3s_ease-out]">
+
+        <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold text-slate-900">Get in Touch</h3>
+            <button onclick="toggleModal('contactModal')" class="p-2 hover:bg-slate-100 rounded-full transition-colors" aria-label="Close modal">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div class="space-y-6">
+            <p class="text-slate-600">
+                I'm currently available for freelance work and internships. Let's connect!
+            </p>
+
+            <div class="grid gap-4">
+                
+                <!-- Email Only -->
+                <a href="mailto:kotasirichandana7@gmail.com" 
+                   class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-yellow transition-colors group">
+                    
+                    <div class="p-3 bg-white rounded-full shadow-sm group-hover:bg-brand-yellow transition-colors">
+                        <i data-lucide="mail" class="w-5 h-5 text-slate-800"></i>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase">Email Me</p>
+                        <p class="font-medium text-slate-900">kotasirichandana7@gmail.com</p>
+                    </div>
+                </a>
+
             </div>
         </div>
+
     </div>
+</div>
 
     <!-- Project Details Modal (Dynamic Content) -->
     <div id="projectModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
@@ -845,6 +848,7 @@
     </script>
 </body>
 </html>
+
 
 
 
