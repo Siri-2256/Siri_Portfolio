@@ -309,73 +309,211 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
         </div>
     </section>
 
-<!-- Skills Section -->
-<section id="skills" class="py-20 bg-[#F9FAFB]">
-    <div class="container mx-auto px-6 max-w-6xl">
+<!-- ========================= -->
+<!-- Skills Section Start -->
+<!-- ========================= -->
 
-        <!-- Header -->
-        <div class="reveal">
-            <div class="flex items-end gap-4 mb-12 border-b-2 border-slate-200 pb-4">
-                <i data-lucide="cpu" class="w-10 h-10 text-brand-yellow mb-2 animate-pulse"></i>
-                <h2 class="text-4xl font-black text-slate-900 uppercase tracking-tight">Skills</h2>
-            </div>
-        </div>
+<style>
+  .skill-pill{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:9999px;
+    background:#f8fafc;
+    border:1px solid #cbd5e1;
+    font-size:14px;
+    font-weight:500;
+    color:#334155;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    transition:all 0.3s ease;
+    cursor:default;
+  }
 
-        <!-- 3 Columns - Fully responsive grids -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  .skill-pill:hover{
+    background:#FFE97A;
+    border-color:#FFD400;
+    color:#000;
+    transform:translateY(-4px) scale(1.05);
+  }
 
-            <!-- Technical Skills -->
-            <div class="reveal bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition-all">
-                <h3 class="text-xl font-bold text-slate-900 mb-4 border-l-4 border-brand-yellow pl-3">
-                    Technical Skills
-                </h3>
-                <div class="flex flex-wrap gap-3">
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Java</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">DSA in Java</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Python</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">HTML</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">CSS</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">OOP</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">REST APIs</span>
-                </div>
-            </div>
+  .skills-card{
+    background:#fff;
+    border:1px solid #e2e8f0;
+    border-radius:24px;
+    padding:30px;
+    transition:0.3s ease;
+    box-shadow:0 4px 10px rgba(0,0,0,0.04);
+  }
 
-            <!-- AI & ML -->
-            <div class="reveal bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition-all">
-                <h3 class="text-xl font-bold text-slate-900 mb-4 border-l-4 border-brand-yellow pl-3">AI & ML</h3>
-                <div class="flex flex-wrap gap-3 mb-6">
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">TensorFlow</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Scikit-learn</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Pandas</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">NumPy</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">XAI</span>
-                </div>
+  .skills-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  }
 
-                <h3 class="text-xl font-bold text-slate-900 mb-4 border-l-4 border-brand-yellow pl-3">Tools & Others</h3>
-                <div class="flex flex-wrap gap-3">
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Git</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">GitHub</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">UI/UX Design</span>
-                </div>
-            </div>
+  .skills-title{
+    font-size:28px;
+    font-weight:800;
+    color:#0f172a;
+  }
 
-            <!-- Soft Skills -->
-            <div class="reveal bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition-all">
-                <h3 class="text-xl font-bold text-slate-900 mb-4 border-l-4 border-brand-yellow pl-3">Soft Skills</h3>
-                <div class="flex flex-wrap gap-3">
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Problem-Solving</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Communication</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Research Writing & Presentation</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Project Management</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Time Management</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Flexibility</span>
-                    <span class="inline-block px-4 py-2 bg-gray-50 border border-slate-300 text-sm font-medium text-slate-700 rounded-full shadow-sm hover:bg-[#FFE97A] hover:border-[#FFD400] hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default">Organization</span>
-                </div>
-            </div>
+  .skills-subtitle{
+    color:#64748b;
+    margin-top:6px;
+    font-size:15px;
+  }
 
-        </div>
+  .skill-heading{
+    font-size:22px;
+    font-weight:700;
+    color:#0f172a;
+    margin-bottom:20px;
+    padding-left:12px;
+    border-left:4px solid #FFD400;
+  }
+
+  @media(max-width:768px){
+
+    .skills-title{
+      font-size:34px;
+    }
+
+    .skills-card{
+      padding:24px;
+    }
+
+    .skill-heading{
+      font-size:20px;
+    }
+  }
+</style>
+
+<section id="skills" class="py-20 bg-[#F8FAFC]">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="flex items-center gap-4 mb-14">
+
+      <div class="w-14 h-14 rounded-xl bg-[#FFE97A] flex items-center justify-center shadow-md">
+        <i class="fas fa-microchip text-2xl text-slate-900"></i>
+      </div>
+
+      <div>
+        <h2 class="skills-title">SKILLS</h2>
+        <p class="skills-subtitle">
+          Technologies, tools, and concepts I work with
+        </p>
+      </div>
+
     </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+      <!-- Programming -->
+      <div class="skills-card">
+
+        <h3 class="skill-heading">
+          Programming & Core Concepts
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">DSA</span>
+          <span class="skill-pill">OOP</span>
+          <span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">Problem Solving</span>
+          <span class="skill-pill">Debugging</span>
+          <span class="skill-pill">Code Optimization</span>
+
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="skills-card">
+
+        <h3 class="skill-heading">
+          Frontend Development
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="skill-pill">HTML5</span>
+          <span class="skill-pill">CSS3</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">Responsive Design</span>
+          <span class="skill-pill">DOM Manipulation</span>
+          <span class="skill-pill">UI/UX Fundamentals</span>
+          <span class="skill-pill">Interactive UI</span>
+          <span class="skill-pill">State Handling</span>
+          <span class="skill-pill">Workflow Design</span>
+
+        </div>
+      </div>
+
+      <!-- AI & ML -->
+      <div class="skills-card">
+
+        <h3 class="skill-heading">
+          AI & Machine Learning
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="skill-pill">TensorFlow</span>
+          <span class="skill-pill">Scikit-learn</span>
+          <span class="skill-pill">Pandas</span>
+          <span class="skill-pill">NumPy</span>
+          <span class="skill-pill">Explainable AI</span>
+          <span class="skill-pill">Prompt Engineering</span>
+
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skills-card">
+
+        <h3 class="skill-heading">
+          Tools & Platforms
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">GitHub</span>
+          <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">Google Colab</span>
+          <span class="skill-pill">Jupyter</span>
+
+        </div>
+      </div>
+
+      <!-- Professional -->
+      <div class="skills-card">
+
+        <h3 class="skill-heading">
+          Professional Skills
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="skill-pill">Technical Writing</span>
+          <span class="skill-pill">Research Presentation</span>
+          <span class="skill-pill">Project Management</span>
+          <span class="skill-pill">Team Collaboration</span>
+          <span class="skill-pill">Analytical Thinking</span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
+
+<!-- ========================= -->
+<!-- Skills Section End -->
+<!-- ========================= -->
 
 
     <!-- Projects Section -->
