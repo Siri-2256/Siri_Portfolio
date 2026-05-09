@@ -310,10 +310,11 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
     </section>
 
 <!-- ========================= -->
-<!-- Skills Section Start -->
+<!-- Updated Skills Section -->
 <!-- ========================= -->
 
 <style>
+
   .skill-pill{
     display:inline-block;
     padding:10px 18px;
@@ -342,6 +343,7 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
     padding:30px;
     transition:0.3s ease;
     box-shadow:0 4px 10px rgba(0,0,0,0.04);
+    height:100%;
   }
 
   .skills-card:hover{
@@ -350,7 +352,7 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
   }
 
   .skills-title{
-    font-size:28px;
+    font-size:42px;
     font-weight:800;
     color:#0f172a;
   }
@@ -358,14 +360,14 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
   .skills-subtitle{
     color:#64748b;
     margin-top:6px;
-    font-size:15px;
+    font-size:16px;
   }
 
   .skill-heading{
     font-size:22px;
     font-weight:700;
     color:#0f172a;
-    margin-bottom:20px;
+    margin-bottom:22px;
     padding-left:12px;
     border-left:4px solid #FFD400;
   }
@@ -384,29 +386,35 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
       font-size:20px;
     }
   }
+
 </style>
+
 
 <section id="skills" class="py-20 bg-[#F8FAFC]">
 
   <div class="max-w-7xl mx-auto px-6">
 
     <!-- Heading -->
-    <div class="flex items-center gap-4 mb-14">
+    <div class="flex items-center gap-5 mb-14">
 
-      <div class="w-14 h-14 rounded-xl bg-[#FFE97A] flex items-center justify-center shadow-md">
-        <i class="fas fa-microchip text-2xl text-slate-900"></i>
+      <div class="w-16 h-16 rounded-2xl bg-[#FFE97A] flex items-center justify-center shadow-md">
+
+        <i class="fas fa-laptop-code text-2xl text-slate-900"></i>
+
       </div>
 
       <div>
         <h2 class="skills-title">SKILLS</h2>
+
         <p class="skills-subtitle">
-          Technologies, tools, and concepts I work with
+          Technologies, tools, and engineering concepts I work with
         </p>
       </div>
 
     </div>
 
-    <!-- Grid -->
+
+    <!-- Skills Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
       <!-- Programming -->
@@ -420,15 +428,16 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
 
           <span class="skill-pill">Java</span>
           <span class="skill-pill">Python</span>
-          <span class="skill-pill">DSA</span>
+          <span class="skill-pill">Data Structures</span>
+          <span class="skill-pill">Algorithms</span>
           <span class="skill-pill">OOP</span>
-          <span class="skill-pill">REST APIs</span>
           <span class="skill-pill">Problem Solving</span>
+          <span class="skill-pill">REST APIs</span>
           <span class="skill-pill">Debugging</span>
-          <span class="skill-pill">Code Optimization</span>
 
         </div>
       </div>
+
 
       <!-- Frontend -->
       <div class="skills-card">
@@ -439,18 +448,18 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
 
         <div class="flex flex-wrap gap-3">
 
-          <span class="skill-pill">HTML5</span>
+          <span class="skill-pill">HTML</span>
           <span class="skill-pill">CSS3</span>
           <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">React</span>
           <span class="skill-pill">Responsive Design</span>
-          <span class="skill-pill">DOM Manipulation</span>
-          <span class="skill-pill">UI/UX Fundamentals</span>
           <span class="skill-pill">Interactive UI</span>
-          <span class="skill-pill">State Handling</span>
           <span class="skill-pill">Workflow Design</span>
+          <span class="skill-pill">State Management</span>
 
         </div>
       </div>
+
 
       <!-- AI & ML -->
       <div class="skills-card">
@@ -465,11 +474,14 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
           <span class="skill-pill">Scikit-learn</span>
           <span class="skill-pill">Pandas</span>
           <span class="skill-pill">NumPy</span>
+          <span class="skill-pill">Deep Learning</span>
+          <span class="skill-pill">Model Evaluation</span>
           <span class="skill-pill">Explainable AI</span>
-          <span class="skill-pill">Prompt Engineering</span>
+         
 
         </div>
       </div>
+
 
       <!-- Tools -->
       <div class="skills-card">
@@ -484,25 +496,53 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
           <span class="skill-pill">GitHub</span>
           <span class="skill-pill">VS Code</span>
           <span class="skill-pill">Google Colab</span>
-          <span class="skill-pill">Jupyter</span>
+          <span class="skill-pill">Vercel</span>
+             <span class="skill-pill">Netlify</span>
 
         </div>
       </div>
+
+
+      <!-- Software Engineering -->
+      <div class="skills-card">
+
+        <h3 class="skill-heading">
+          Software Engineering
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="skill-pill">Testing</span>
+          <span class="skill-pill">Code Optimization</span>
+          <span class="skill-pill">Modular Design</span>
+          <span class="skill-pill">Version Control</span>
+          <span class="skill-pill">Performance Optimization</span>
+          <span class="skill-pill">System Workflow</span>
+          <span class="skill-pill">Scalable Design</span>
+          <span class="skill-pill">UI Architecture</span>
+
+        </div>
+      </div>
+
 
       <!-- Professional -->
       <div class="skills-card">
 
         <h3 class="skill-heading">
-          Professional Skills
+          Professional & Collaboration
         </h3>
 
         <div class="flex flex-wrap gap-3">
-
+          
           <span class="skill-pill">Technical Writing</span>
           <span class="skill-pill">Research Presentation</span>
+          <span class="skill-pill">UI/UX Thinking</span>
+          <span class="skill-pill">Documentation</span>
           <span class="skill-pill">Project Management</span>
           <span class="skill-pill">Team Collaboration</span>
+          <span class="skill-pill">Communication</span>
           <span class="skill-pill">Analytical Thinking</span>
+       
 
         </div>
       </div>
@@ -512,7 +552,7 @@ I enjoy turning complex ideas into simple, meaningful digital experiences that u
 </section>
 
 <!-- ========================= -->
-<!-- Skills Section End -->
+<!-- Updated Skills Section End -->
 <!-- ========================= -->
 
 
